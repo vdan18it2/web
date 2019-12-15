@@ -31,6 +31,7 @@ class blogController extends Controller
         $create_blog_table->come = $request->come;
         $create_blog_table->back = $request->back;
         $create_blog_table->rooms = $request->rooms;
+        $create_blog_table->people = $request->people;
         $create_blog_table->save();
         return view('b.new');
     }
@@ -49,6 +50,7 @@ class blogController extends Controller
         $post->come = $request->come;
         $post->back = $request->back;
         $post->rooms = $request->rooms;
+        $post->people = $request->people;
         $post->update();
         return redirect()->route('post.index');
     }

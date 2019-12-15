@@ -30,7 +30,8 @@ class BlogFormRequest extends FormRequest
             'add'=>'required|',
             'come'=>'required|',
             'back'=>'required|',
-            'rooms'=>'required|'
+            'rooms'=>'required|',
+            'people'=>'required|'
         ];
     }
     public function messages(){
@@ -43,7 +44,8 @@ class BlogFormRequest extends FormRequest
             'email.required'=>'phải nhập email',
             'come.required'=>'phải nhập come',
             'back.required'=>'phải nhập back',
-            'rooms.required'=>'phải nhập back',
+            'rooms.required'=>'phải chọn phòng',
+            'people.required'=>'phải nhập số ngừoi',
         ];
     }
 }

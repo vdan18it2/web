@@ -10,6 +10,7 @@
                       <li class="active"><a href="/blog/public/events">Sự kiện</a></li>
                       <li><a href="/blog/public/datphong">Đặt phòng</a></li>
                       <li><a href="/blog/public/contact">Liên hệ</a></li>
+                      <li><a href="#">Đăng nhập</a></li>
                     </ul>
                   </div>  
 
@@ -21,7 +22,7 @@
       @foreach ($events as $b)
       <div class="border">
               <h2>{{$b->title}}</h2>
-              <p>{{Str::limit($b->content,20)}}</p>
+              <p>{{Str::limit($b->content,500)}}</p>
               <form style="text-align: center" action="{{ route('events.delete',$b->id) }}" method="POST">
                       @csrf
                       @method('delete')

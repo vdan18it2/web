@@ -21,14 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="/blog/public/home">DANH SÁCH KHÁCH HÀNG ĐẶT PHÒNG ONLINE</a>
-
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="/blog/public/post/new">NEW BLOG</a>
-            </li>
-        </ul>
+        <a class="navbar-brand" href="/blog/public/home">DANH SÁCH KHÁCH HÀNG ĐẶT PHÒNG ONLINE</a>  
     </nav>
     <div class="container">
             @foreach ($blog as $b)
@@ -39,7 +32,9 @@
                 <p>ĐỊA CHỈ: {{$b->add}}</p>
                 <p>NGÀY ĐẾN: {{$b->come}}</p>
                 <p>NGÀY ĐI: {{$b->back}}</p>
+                <p>số ngừogi: {{$b->people}}</p>
                 <p>Loại phòng: {{$b->rooms}}</p>
+                
                     <form style="text-align: center" action="{{ route('post.delete',$b->id) }}" method="POST">
                             @csrf
                             @method('delete')

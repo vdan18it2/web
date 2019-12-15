@@ -7,9 +7,10 @@
                       <li >
                         <a href="/blog/public">Trang chủ</a>
                       </li>
-                      <li><a href="/blog/public/datphong">Sự kiện</a></li>
+                      <li><a href="/blog/public/sukien">Sự kiện</a></li>
                       <li class="active"><a href="/blog/public/datphong">Đặt phòng</a></li>
                       <li ><a href="/blog/public/contact">Liên hệ</a></li>
+                      <li><a href="#">Đăng nhập</a></li>
                     </ul>
                   </div>  
 
@@ -103,6 +104,17 @@
 
                   <div class="row form-group">
                     <div class="col-md-12 mb-3 mb-md-0">
+                      <label class="font-weight-bold" for="fullname">Số người ở</label>
+                      <div class="alert-danger">
+                          
+                        <span class="error-message">{{ $errors->first('people') }}</span>
+                </div>
+                      <input type="text" id="people" name="people" class="form-control" placeholder="Số ngừoi ở">
+                    </div>
+                  </div>
+
+                  <div class="row form-group">
+                    <div class="col-md-12 mb-3 mb-md-0">
                       <label class="font-weight-bold" for="email">loại phòng</label>
                       <div class="alert-danger">
                           <span class="error-message">{{ $errors->first('rooms') }}</span>
@@ -125,8 +137,6 @@
             
         </div>
             </div>
-            
           </div>
-          
             @endsection
 

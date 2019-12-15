@@ -50,6 +50,16 @@
               </div>
             </div>
 
+            <div class="row form-group">
+              <div class="col-md-12 mb-3 mb-md-0">
+                <label class="font-weight-bold" for="phone">Số người ở</label>
+                <div class="alert-danger">
+                    
+                  <span class="error-message">{{ $errors->first('people') }}</span>
+          </div>
+                <input type="text" value="{!! $post->people ?? old('peple') !!}" id="people" name="people" class="form-control" placeholder="Số người ở">
+              </div>
+            </div>
 
 
 

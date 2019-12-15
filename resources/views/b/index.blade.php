@@ -10,6 +10,7 @@
                       <li><a href="/blog/public/sukien">Sự kiện</a></li>
                       <li><a href="/blog/public/datphong">Đặt phòng</a></li>
                       <li><a href="/blog/public/contact">Liên hệ</a></li>
+                      <li><a href="#">Đăng nhập</a></li>
                     </ul>
                   </div>  
 

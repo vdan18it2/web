@@ -9,6 +9,7 @@
    <li class="active"><a href="/blog/public/sukien">Sự kiện</a></li>
    <li><a href="/blog/public/datphong">Đặt phòng</a></li>
    <li><a href="/blog/public/contact">Liên hệ</a></li>
+   <li><a href="#">Đăng nhập</a></li>
  </ul>
 </div>  
 
@@ -17,14 +18,17 @@
 
 @section('body')
     <div class="container">
-      <div class="row">              
+      <div class="row">  
+           
               <h2>{{$page->title}}</h2>
+
               <p>{{$page->content}}</p> 
+
       </div>
       <div class="row" style="height='1000px'">
       @isset($page->myfile)
       
-          <img src="{!! url('uploads',$page->myfile)!!}" alt="" style="width:100%; height:50% ">
+          <img src="{!! url('uploads',$page->myfile)!!}" alt="" style="width:50%; height:50% ">
       
       @endisset
     </div>

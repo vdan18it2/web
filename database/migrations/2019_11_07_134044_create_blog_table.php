@@ -22,6 +22,7 @@ class CreateBlogTable extends Migration
             $table->string('rooms');
             $table->string('come');
             $table->string('back');
+            $table->string('people');
             $table->timestamps();
         });
     }
